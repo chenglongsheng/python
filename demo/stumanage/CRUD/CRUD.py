@@ -23,7 +23,7 @@ def insert():
 
     stu_info['update_time'] = time.strftime("%Y:%m:%d %H:%M:%S", time.localtime())
 
-    stu_info_list.append(stu_info)
+    stu_info_list.append(stu_info.copy())
     print(stu_info_list)
 
     return stu_info_list
